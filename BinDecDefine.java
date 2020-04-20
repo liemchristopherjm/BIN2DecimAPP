@@ -60,3 +60,25 @@ public class BinDecDefine{
 
          }
     }
+
+    public static void convert(){
+        i = 1;
+        while (i <= 7){
+         if (binary[i] == 1){
+             double urut = i;
+             decimal = Math.pow(decimal + 2, urut);
+             total = total + decimal;
+            }
+         decimal = 0;
+         i= i + 1 ;
+        }
+        if (binary[0] == 1) {total = total +1;}
+        System.out.println("Nilai desimal dari binary " + binary[7] + binary[6] + binary[5] + binary[4] + binary[3] + binary[2] + binary[1] + binary[0] + " adalah " + total + "\n");
+    }
+
+
+
+    public static void binreset(){
+        bener = 0;
+        for (bener = 0 ; bener <7 ; bener++){ binary[bener] = 0;}
+    }
