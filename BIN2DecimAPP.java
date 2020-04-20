@@ -29,6 +29,17 @@ public class BIN2DecimAPP {
                 }
 
         }
+        System.out.println("Ada lagi yang ingin diubah?\n1. Ya\n2. Tidak");
+        bener = 0;
+        while (bener ==0 ){
+             System.out.println("[Masukkan input 1-2!]");
+             pilih = input.next() + input.nextLine();
+             if (pilih.equals("1")) { bener =1; start(); }
+             else {
+                 if(pilih.equals("2")){bener = 1;}
+                 else {System.out.println("Inputmu salah!");}
+                }
 
+        }
     }
 }
